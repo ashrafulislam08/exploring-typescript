@@ -21,7 +21,7 @@ function createUser(firstName: string, lastName?: string) {
         firstName,
         lastName,
         skills: ['HTML', 'CSS', 'JavaScript']
-    } as User;
+    } satisfies User;
     return user;    
     
 }
