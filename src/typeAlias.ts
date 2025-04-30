@@ -16,12 +16,12 @@ type User = {
 }
 
 function createUser(firstName: string, lastName?: string) {
-    const user: User = {
+    const user = {
         id: crypto.randomUUID(),
         firstName,
         lastName,
         skills: ['HTML', 'CSS', 'JavaScript']
-    }
+    } as User;
     return user;    
     
 }
