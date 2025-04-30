@@ -31,3 +31,20 @@ names.unshift("Sam")
 
 names.shift()
 console.log(names)
+
+
+const phones: {name: string, brand:string, model: string, year: number}[] = [
+    {
+        name: 'BandToag',
+        brand: 'Tecno',
+        model: 'BanT20',
+        year: 2024
+    }
+]
+
+phones.push({
+    name: 'Samsung Galaxy S3',
+    brand: 'Samsung',
+    model: 'Samsung S2',
+    year: 2022
+})

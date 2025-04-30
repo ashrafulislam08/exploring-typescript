@@ -23,3 +23,27 @@ function greet(name: string, message: string = "Welcome to Stack Learner", ...re
     console.log(`Hello, ${name}! ${message}!`)
     console.log(rest)
 }
+
+
+
+enum EmployeeRole {
+    DEVELOPER = 'DEVELOPER',
+    MANAGER = 'MANAGER',
+    HR = 'HR'
+}
+
+
+const employees: {
+    id: number;
+    name: string;
+    role: EmployeeRole;
+}[] = []
+
+
+employees.push({id: 1, name: "Siam", role: EmployeeRole.DEVELOPER})
+employees.push({id: 2, name: "Ashraful", role: EmployeeRole.MANAGER})
+employees.push({id: 3, name: "Sam", role: EmployeeRole.HR})
+employees.push({id: 4, name: "Sankit", role: EmployeeRole.DEVELOPER})
+
+
+console.log(employees)
